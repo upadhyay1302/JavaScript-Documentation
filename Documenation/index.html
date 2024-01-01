@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Javascript Documentation</h1>
+            <ul>
+                <a href="#Introduction">
+                    <li>Introduction</li>
+                </a>
+                <a href="#What_you_should_already_know">
+                    <li>What you should already know</li>
+                </a>
+                <a href="#JavaScript_and_Java">
+                    <li>JavaScript and Java</li>
+                </a>
+                <a href="#Hello_world">
+                    <li>Hello world</li>
+                </a>
+                <a href="#Variables">
+                    <li>Variables</li>
+                </a>
+                <a href="#Fuctions">
+                    <li>Functions</li>
+                </a>
+                <a href="#Loops">
+                    <li>Loops</li>
+                </a>
+                <a href="#Objects">
+                    <li>Objects</li>
+                </a>
+                <a href="#Arrays">
+                    <li>Arrays</li>
+                </a>
+                <a href="#Control Statements (Switch Case)">
+                    <li>Control Statements (Switch Case)</li>
+                </a>
+                <a href="#Error Handling (Try-Catch)">
+                    <li>Error Handling (Try-Catch)</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Introduction">
+            <h2>Introduction</h2>
+            <article>
+                <p>
+                    JavaScript is a cross-platform, object-oriented scripting language.
+                    It is a small and lightweight language. Inside a host environment
+                    (for example, a web browser), JavaScript can be connected to the
+                    objects of its environment to provide programmatic control over
+                    them.
+                </p>
+
+                <p>
+                    JavaScript contains a standard library of objects, such as Array,
+                    Date, and Math, and a core set of language elements such as
+                    operators, control structures, and statements. Core JavaScript can
+                    be extended for a variety of purposes by supplementing it with
+                    additional objects; for example:
+                </p>
+                <ul>
+                    <li>
+                        Client-side JavaScript extends the core language by supplying
+                        objects to control a browser and its Document Object Model (DOM).
+                        For example, client-side extensions allow an application to place
+                        elements on an HTML form and respond to user events such as mouse
+                        clicks, form input, and page navigation.
+                    </li>
+                    <li>
+                        Server-side JavaScript extends the core language by supplying
+                        objects relevant to running JavaScript on a server. For example,
+                        server-side extensions allow an application to communicate with a
+                        database, provide continuity of information from one invocation to
+                        another of the application, or perform file manipulations on a
+                        server.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="What_you_should_already_know">
+            <h2>What you should already know</h2>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+
+                <ul>
+                    <li>
+                        A general understanding of the Internet and the World Wide Web
+                        (WWW).
+                    </li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>
+                        Some programming experience. If you are new to programming, try
+                        one of the tutorials linked on the main page about JavaScript.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="JavaScript_and_Java">
+            <h2>JavaScript and Java</h2>
+            <article>
+                <p>
+                    JavaScript and Java are similar in some ways but fundamentally
+                    different in some others. The JavaScript language resembles Java but
+                    does not have Java's static typing and strong type checking.
+                    JavaScript follows most Java expression syntax, naming conventions
+                    and basic control-flow constructs which was the reason why it was
+                    renamed from LiveScript to JavaScript.
+                </p>
+
+                <p>
+                    In contrast to Java's compile-time system of classes built by
+                    declarations, JavaScript supports a runtime system based on a small
+                    number of data types representing numeric, Boolean, and string
+                    values. JavaScript has a prototype-based object model instead of the
+                    more common class-based object model. The prototype-based model
+                    provides dynamic inheritance; that is, what is inherited can vary
+                    for individual objects. JavaScript also supports functions without
+                    any special declarative requirements. Functions can be properties of
+                    objects, executing as loosely typed methods.
+                </p>
+                <p>
+                    JavaScript is a very free-form language compared to Java. You do not
+                    have to declare all variables, classes, and methods. You do not have
+                    to be concerned with whether methods are public, private, or
+                    protected, and you do not have to implement interfaces. Variables,
+                    parameters, and function return types are not explicitly typed.
+                </p>
+            </article>
+        </section>
+        <section id="Hello_world">
+            <h2>Hello world</h2>
+            <article>
+                To get started with writing JavaScript, open the Scratchpad and write
+                your first "Hello world" JavaScript code:
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");
+          </code>
+
+                Select the code in the pad and hit Ctrl+R to watch it unfold in your
+                browser!
+            </article>
+        </section>
+        <section id="Variables">
+            <h2>Variables</h2>
+            <article>
+                <p>
+                    You use variables as symbolic names for values in your application.
+                    The names of variables, called identifiers, conform to certain
+                    rules.
+                </p>
+                <p>
+                    A JavaScript identifier must start with a letter, underscore (_), or
+                    dollar sign ($); subsequent characters can also be digits (0-9).
+                    Because JavaScript is case sensitive, letters include the characters
+                    "A" through "Z" (uppercase) and the characters "a" through "z"
+                    (lowercase).
+                </p>
+                <p>
+                    You can use ISO 8859-1 or Unicode letters such as å and ü in
+                    identifiers. You can also use the Unicode escape sequences as
+                    characters in identifiers. Some examples of legal names are
+                    Number_hits, temp99, and _name.
+                </p>
+            </article>
+        </section>
+        <section id="Functions">
+            <h2>Functions</h2>
+            <article>
+                <p>
+                    Functions are blocks of code designed to perform a particular task.
+                    They are reusable and can be called multiple times within a program.
+                </p>
+                <p>
+                    In JavaScript, functions are first-class objects, which means they can
+                    be passed around like any other value. They can be assigned to
+                    variables, passed as arguments, and returned from other functions.
+                </p>
+                <p>
+                    Here's an example of a simple function that adds two numbers:
+                    <code>
+              function add(a, b) {
+                return a + b;
+              }
+            </code>
+                </p>
+            </article>
+        </section>
+
+        <section id="Loops">
+            <h2>Loops</h2>
+            <article>
+                <p>
+                    Loops are used to execute a block of code repeatedly until a certain
+                    condition is met. JavaScript supports various types of loops:
+                    <code>for</code> <code>while</code> <code>do...while</code>.
+                </p>
+                <p>
+                <h3>For Loop</h3>
+                The for loop is commonly used for iterating over arrays
+                or a fixed number of times. Here's an example:
+                <code>
+              for (let i = 0; i < 5; i++) {
+                console.log(i);
+              }
+            </code>
+                </p>
+                <h3>While Loop</h3>
+                <p>
+                    The while loop executes a block of code while a specified
+                    condition is true.
+                </p>
+                <p>
+                    It consists of a condition and a code block. The condition is evaluated
+                    before executing the code block.
+                </p>
+                <code>
+      while (condition) { <br />
+      &nbsp;&nbsp;// code block to be executed <br />
+      }
+    </code>
+
+                <h4>Example:</h4>
+                <p>Printing numbers from 1 to 5 using a while loop:</p>
+                <code>
+      let i = 1; <br />
+      while (i <= 5) { <br />
+      &nbsp;&nbsp;console.log(i); <br />
+      &nbsp;&nbsp;i++; <br />
+      }
+    </code>
+            </article>
+
+            <article>
+                <h3>Do-While Loop</h3>
+                <p>
+                    The do-while loop executes a block of code at least once,
+                    and then repeatedly executes it while a specified condition is true.
+                </p>
+                <p>
+                    It consists of a code block followed by the do keyword and
+                    the condition.
+                </p>
+                <code>
+      do { 
+        // code block to be executed 
+      } while (condition);
+    </code>
+
+                <h4>Example:</h4>
+                <p>Prompting the user for a valid number between 1 and 10:</p>
+                <code>
+      let number; 
+      do { 
+        number = prompt("Enter a number between 1 and 10:"); 
+      } while (number < 1 || number > 10); 
+      console.log("Valid number entered:", number);
+        </article>
+      </section>
+
+      <section id="Objects">
+        <h2>Objects</h2>
+        <article>
+          <p>
+            Objects in JavaScript are collections of key-value pairs used to store
+            various data types and more complex entities.
+          </p>
+          <code>
+            let person = { <br />
+            &nbsp;&nbsp;name: "John", <br />
+            &nbsp;&nbsp;age: 30, <br />
+            &nbsp;&nbsp;email: "john@example.com", <br />
+            &nbsp;&nbsp;greet: function() { <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;return "Hello, my name is " + this.name; <br />
+            &nbsp;&nbsp;} <br />
+            }; <br />
+            console.log(person.name); // Output: John <br />
+            console.log(person.greet()); // Output: Hello, my name is John
+          </code>
+            </article>
+        </section>
+
+
+        <section id="Arrays">
+            <h2>Arrays</h2>
+            <article>
+                <p>
+                    Arrays in JavaScript store multiple values in a single variable and can
+                    hold different data types.
+                </p>
+                <code>
+            let fruits = ["Apple", "Banana", "Orange"]; <br />
+            console.log(fruits[0]); // Output: Apple <br />
+            fruits.push("Mango"); <br />
+            console.log(fruits); // Output: ["Apple", "Banana", "Orange", "Mango"] <br />
+            for (let i = 0; i < fruits.length; i++) { <br />
+            &nbsp;&nbsp;console.log(fruits[i]); <br />
+            }
+          </code>
+            </article>
+        </section>
+
+        <section id="ControlStatements">
+            <h2>Control Statements (Switch Case)</h2>
+            <article>
+                <p>
+                    The <code>switch</code> statement allows conditional execution based on
+                    different cases.
+                </p>
+                <code>
+      let day = "Monday"; <br />
+      switch (day) { <br />
+      &nbsp;&nbsp;case "Monday": <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;console.log("It's Monday!"); <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;break; <br />
+      &nbsp;&nbsp;case "Tuesday": <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;console.log("It's Tuesday!"); <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;break; <br />
+      &nbsp;&nbsp;default: <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;console.log("Another day."); <br />
+      }
+    </code>
+            </article>
+        </section>
+
+        <section id="ErrorHandling">
+            <h2>Error Handling (Try-Catch)</h2>
+            <article>
+                <p>
+                    <code>try...catch</code> statements are used for error handling in
+                    JavaScript.
+                </p>
+                <code>
+        try { <br />
+        &nbsp;&nbsp;undefinedFunction(); // Code that may cause an error <br />
+        } catch (error) { <br />
+        &nbsp;&nbsp;console.error("Error:", error.message); <br />
+        }
+      </code>
+            </article>
+        </section>
